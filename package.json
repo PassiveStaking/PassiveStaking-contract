@@ -1,0 +1,25 @@
+{
+  "name": "PassiveStaking",
+  "version": "1.0.0",
+  "author": "Heisenberg Soul",
+  "license": "MIT",
+  "devDependencies": {
+    "@truffle/hdwallet-provider": "1.2.3",
+    "@types/chai": "^4.2.18",
+    "@types/mocha": "^8.2.2",
+    "chai": "^4.3.4",
+    "dotenv": "^9.0.0",
+    "ethereum-waffle": "^3.3.0",
+    "mocha": "^8.4.0",
+    "truffle": "^5.3.5",
+    "truffle-plugin-verify": "^0.5.8",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4"
+  },
+  "scripts": {
+    "compile": "truffle compile",
+    "test": "mocha",
+    "testnet": "truffle migrate --network testnet && truffle run verify PassiveStaking --network testnet",
+    "mainnet": "truffle migrate --network mainnet && truffle run verify PassiveStaking --network mainnet"
+  }
+}
